@@ -54,7 +54,6 @@
 
                 <ul class="site-menu js-clone-nav d-none">        
                     <li><a href="index.html">Home</a></li>
-                  
                   <li><a href="about.html">About</a></li>
                   <li><a href="contact.html">Contact</a></li>
                 </ul>
@@ -75,7 +74,7 @@
           <div class="col-md-8" data-aos="fade-up" data-aos-delay="400">
             <h1 class="text-white font-weight-light mb-2 display-4">HOW ARE YOU HELPING?</h1>
             <div class="text-white mb-4"><span class="text-white-opacity-05"><medium>HOSTED BY SEAN RILEY</medium></span></div>
-            <p><a href="single-post.html" class="btn btn-primary btn-sm py-3 px-4 small">Read The Transcript</a></p>
+            <p class="btn btn-primary btn-sm py-3 px-4 small" id="red1">Behind the Mic</p>
 
            
 
@@ -84,6 +83,7 @@
       </div>
     </div>  
 
+    <section id="red2"></section>
     <div class="site-section">
       <div class="container" data-aos="fade-up">
         <div class="row mb-5">
@@ -363,17 +363,16 @@
               </div>
               <div class="col-md-6 col-lg-6">
                 <ul class="list-unstyled">
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">About</a></li>
-                  <li><a href="#">Contact</a></li>
-                  <li><a href="#">Donate</a></li>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="contact.html">Contact</a></li>
                 </ul>
               </div>
               <div class="col-md-6 col-lg-6">
                 <ul class="list-unstyled">
-                  <li><a href="#">Membership</a></li>
+                  <li><a href="#">Donate</a></li>
                   <li><a href="#">Subscribe</a></li>
-                  <li><a href="#">RileyCapital</a></li>
+                  <li><a href="#">Membership</a></li>
                   <li><a href="#">Privacy Policy</a></li>
                 </ul>
               </div>
@@ -445,6 +444,12 @@
                 });
                 }
             });
+
+            $("#red1").click(function() {
+    $('html,body').animate({
+        scrollTop: $("#red2").offset().top},
+        1000);
+});
     </script>
 
 
